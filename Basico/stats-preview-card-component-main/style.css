@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    --darkDesaturatedBlue: hsl(244, 38%, 16%);
+    --softViolet: hsl(277, 64%, 61%);
+
+    --white: hsl(0, 0%, 100%);
+    --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --slightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    font-size: 15px;
+    background-color: #eee;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+.contain{
+    border: 1px solid var(--veryDarkBlue);
+    background-color: var(--veryDarkBlue);
+    width: 1150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    border-radius: 5px;
+    margin: 100px auto;
+    max-height: 350px;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.left-side{
+    float: left;
+    background-color: var(--darkDesaturatedBlue);
+    width: 50%;
+    height: 350px;
+    padding: 50px 40px 50px 60px;
+}
+
+.right-side{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 350px;
+    background-color: hsla(277, 78%, 32%, 1);
+    z-index: 2;
+}
+
+.right-side-overlay{
+    position: absolute;
+    opacity: 40%;
+}
+
+span{
+    color: var(--softViolet)
+}
+
+h2{
+    margin: 10px 10px 10px 0px;
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 20px 0px 20px 0px;
+    color: var(--slightlyTransparentWhite2);
+    font-size: .8rem;
+    line-height: 1.2rem;
+    text-align: left;
+    width: 80%;
+}
+
+.stats{
+    display: inline-block;
+    margin-top: 30px;
+    width: 40px;
+    margin-right: 60px;
+    color: var(--slightlyTransparentWhite2);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.stats span{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    color:hsl(233, 47%, 7%);
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px){
+.contain{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    position: static;
+    max-width: 242px;
+    max-height: none;
+    height: 600px;
+    overflow: hidden;
+}
+
+.left-side{
+    background-color: var(--darkDesaturatedBlue);
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px;
+}
+
+.right-side{
+    width: 100%;
+    height: 200px;
+    background-color: hsla(277, 78%, 32%, 1);
+}
+
+img{
+    height: 200px;
+    width: 100%;
+}
+
+h2{
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+p{
+    margin: 18px 0px 18px 0px;
+    font-size: .7rem;
+    line-height: 1.rem;
+    text-align: center;
+    width: 100%;
+}
+
+.stats{
+    display: block;
+    margin: 15px auto;
+    width: 60px;
+    text-align: center;
+}
+
+.stats span{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.attribution {
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
