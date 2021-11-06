@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayisBlue: hsl(227, 10%, 46%);
+
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--darkCyan);
+}
+
+.contain{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.card{
+    position: absolute;
+    width: 400px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    box-shadow: 10px 10px 20px hsl(184, 44%, 43%), -10px -10px 20px hsl(184, 44%, 43%);
+}
+
+.bg-pattern-card{
+    position: relative;
+    height: 150px;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-position: cover;
+}
+
+.avatar{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%,50%);
+    background-image: url(./images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.business-card{
+    height: 170px;
+}
+
+
+.business-card h2{
+    padding-top: 85px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.business-card h2 span{
+    color: var(--darkGray);
+}
+
+.business-card p{
+    color: var(--darkGray);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+hr{
+    border-top: 1px solid hsla(0, 0%, 59%, 0.2);;
+}
+
+.followers{
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.follower{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.follower span{
+    color: var(--veryDarkDesaturatedBlue);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.follower p{
+    font-size: 0.8rem;
+    color: var(--darkGray);
+    margin-top: 5px;
+}
+
+.bg-pattern-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -50%);
+}
+
+.bg-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.bg-pattern-bottom{
+    width: 1000px;
+}
+
+.attribution {
+    position: fixed;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
