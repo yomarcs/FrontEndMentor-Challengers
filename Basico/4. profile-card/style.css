@@ -52,7 +52,7 @@ body{
     left: 50%;
     bottom: 0px;
     transform: translate(-50%,50%);
-    background-image: url(./images/image-victor.jpg);
+    background-image: url("./images/image-victor.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 120px;
