@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: contain;
+}
+
+.container{
+    width: 90vw;
+    height: 90vh;
+    margin: 6vh 5vw;
+    border: 1px solid red;
+}
+
+.logo{
+    border: 1px solid tomato;
+    margin-bottom: 70px;
+}
+
+.logo img{
+    height: 2.813rem;
+}
+
+.clearfix{
+    border: 1px solid green;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.illustration{
+    float: left;
+    width: 55%;
+    border: 1px solid yellow;
+}
+
+.illustration img{
+    width: 100%;
+}
+
+.description{
+    width: 45%;
+    float: right;
+    padding: 2.813rem;
+    border: 1px solid white;
+}
+
+.description h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.188rem;
+    color: white;
+    margin-bottom: 0.938rem;
+}
+
+.description p{
+    font-size: 0.938rem;
+    color: #ccc;
+    margin-bottom: 1.563rem;
+}
+
+.description button{
+    font-size: 0.938rem;
+    color: white;
+    background-color: var(--softMagenta);
+    outline: none;
+    border: none;
+    border-radius: 3.125rem;
+    padding: 0.938rem 3.438rem;
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
