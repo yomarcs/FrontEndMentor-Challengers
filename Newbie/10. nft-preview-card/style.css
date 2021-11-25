@@ -1,0 +1,208 @@
+/**
+* The designs were created to the following widths:
+*  - Mobile: 375px
+*  - Desktop: 1440px 
+* 
+* 
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --veryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--veryDarkBlueMain);
+}
+
+main{
+    min-height: 100vh;
+    background-color: var(--veryDarkBlueMain);
+}
+
+.header {
+    height: 275px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.header__figure {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__figure:hover .overlay {
+    opacity: 1;
+}
+
+.card{
+    width: 320px;
+    height: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--veryDarkBlueCard);
+}
+
+.description{
+    border-bottom: 1px solid var(--veryDarkBlueLine) ;
+}
+
+.description a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+.description a:active{
+    color: var(--cyan);
+}
+
+.description a h3{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.description p{
+    color: #aaa;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin-bottom: 24px;
+}
+
+.ethereum{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ethereum .ethereum__left{
+    color: var(--cyan);
+}
+
+.ethereum .ethereum__left img{
+    position: absolute;
+}
+
+.ethereum .ethereum__right{
+    color: #aaa;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.ethereum .ethereum__right{
+    position: relative;
+}
+
+.ethereum .ethereum__right img{
+    position: absolute;
+    left: -20px;
+}
+
+.avatar{
+    margin-left: 50px;
+    padding-top: 15px ;
+}
+
+.avatar p{
+    font-size: .95rem;
+    color: #aaa;
+    line-height: 40px;
+    font-weight: 300;
+    position: relative;
+}
+
+.avatar p a{
+    color: white;
+    text-decoration: none;
+}
+
+.avatar p a:active{
+    color: var(--cyan);
+}
+
+.avatar p img{
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+
+}
+
+.attribution { 
+    color: #aaa;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-align: center; }
+.attribution a {
+    color: white; 
+    text-decoration: none;
+}
+
+@media screen and (max-height: 650px){
+    .attribution{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px){
+    .card{
+        position: static;
+        transform: none;
+        margin: 30px auto;
+    }
+}
