@@ -1,0 +1,53 @@
+.tutorial{
+    max-width: var(--width);
+    display: flex;
+    margin: 0px auto;
+    padding: 0px 90px;
+    justify-content: space-around;
+}
+
+.tutorial__figure{
+    width: 80%;
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+.tutorial__figure img{
+    width: 100%;
+    height: auto;
+}
+
+.tutorial__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 40px;
+}
+
+.tutorial__title{
+    font-size: 40px;
+    font-family: var(--raleway);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.tutorial__paragraph{
+    font-size: 1rem;
+    font-family: var(--open-sans);
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.tutorial__link{
+    color: var(--cyan);
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px 0px;
+    border-bottom: 1px solid var(--cyan);
+}
+
+.tutorial__link img{
+    vertical-align: sub;
+}

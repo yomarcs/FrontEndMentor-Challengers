@@ -1,0 +1,44 @@
+.suscribe{
+    max-width: 880px;
+    margin: 0px auto;
+    padding: 3rem 4rem 2rem 4rem;
+    background-color: var(--darkBlue4);
+    border-radius: 1rem;
+    box-shadow: 10px 10px var(--darkBlue2);
+    position: relative;
+    top: 8rem;
+}
+
+.suscribe__title{
+    font-family: var(--raleway);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.suscribe__text{
+    font-size: 0.9rem ;
+    text-align: center;
+    width: 85%;
+    color: #ccc;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+}
+
+.suscribe__form{
+    display: flex;
+}
+
+.suscribe__input{
+    flex: 1;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    padding: 0 2.5rem;
+    outline: none;
+}
+
+.btn1{
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}

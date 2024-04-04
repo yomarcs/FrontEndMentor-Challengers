@@ -1,0 +1,205 @@
+@import url("./variables.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./features.css");
+@import url("./button.css");
+@import url("./tutorial.css");
+@import url("./comments.css");
+@import url("./suscribe.css");
+@import url("./footer.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--white);
+    background: var(--darkBlue1);
+    font-family: var(--open-sans);
+    font-size: 14px;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 300pt;
+    background-position: center 600pt;
+}
+
+.container{
+    width: 100%;
+    background-color: var(--darkBlue2);
+}
+
+@media (max-width: 1159px){
+    body{
+        background-size: 100% 320pt;
+    }
+}
+
+@media (max-width: 1000px){
+    .tutorial{
+        flex-direction: column;
+        padding: 0 25px;
+    }
+
+    .tutorial__text{
+        margin: 100px 0 0 0;
+        width: 100%;
+    }
+
+    .tutorial__figure{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 948px){
+    body{
+        background-size: 100% 335pt;
+    }
+
+    .suscribe{
+        width: 80%;
+        padding: 30px 30px 20px 30px;
+    }
+
+    .suscribe__form{
+        margin: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .suscribe__form input{
+        width: 100%;
+        padding: 1.2rem 2rem;
+        margin: 0 auto;
+    }
+
+    .btn1{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:800px){
+    body{
+        background-size: 100% 260pt;
+    }
+
+    .header__item{
+        margin-left: 1.5rem;
+    }
+
+    .hero .hero__img{
+        width: 80%;
+    }
+
+    .features__card{
+        width: 100%;
+    }
+
+    .comments{
+        gap: 30px;
+        margin-bottom: 0;
+    }
+
+    .comment{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:750px){
+    body{
+        background-size: 100% 250pt;
+    }
+}
+
+@media (max-width:700px){
+    body{
+        background-size: 100% 310pt;
+    }
+
+    .footer__info{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .footer__sitemap ul{
+        columns: 1;
+    }
+
+    .footer__social{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:680px){
+    body{
+        background-size: 100% 300pt;
+    }
+}
+
+@media (max-width:670px){
+    body{
+        background-size: 100% 290pt;
+    }
+}
+
+@media (max-width:650px){
+    body{
+        background-size: 100% 325pt;
+    }
+}
+
+@media (max-width:630px){
+    body{
+        background-size: 100% 320pt;
+    }
+}
+
+@media (max-width:600px){
+    body{
+        background-size: 100% 300pt;
+    }
+}
+
+@media (max-width:570px){
+    body{
+        background-size: 100% 280pt;
+    }
+}
+
+@media (max-width:530px){
+    body{
+        background-size: 100% 270pt;
+    }
+
+    .header{
+        padding: 0px 2rem;    
+    }
+}
+
+@media (max-width:475px){
+    body{
+        background-size: 100% 300pt;
+    }
+
+    .tutorial__text{
+        width: 100%;
+    }
+
+    .header__list{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

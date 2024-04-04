@@ -1,0 +1,29 @@
+.features{
+    max-width: var(--width);
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+}
+
+.features__card{
+    width: 50%;
+    text-align: center;
+    padding: 2.6rem;
+}
+
+.features__img{
+    margin-bottom: 1rem;
+}
+
+.features__title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.features__text{
+    font-size: 0.9rem;
+    width: 75%;
+    margin: 0px auto;
+    text-align: center;
+}

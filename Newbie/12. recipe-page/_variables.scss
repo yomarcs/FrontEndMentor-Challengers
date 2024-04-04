@@ -1,0 +1,44 @@
+//? font path
+$outfit-font-path: "./assets/fonts/outfit";
+$youngSerif-font-path: "./assets/fonts/young-serif";
+
+//? Colors
+$nutmeg: hsl(14, 45%, 36%);
+$dark-raspberry: hsl(332, 51%, 32%);
+$white: hsl(0, 0%, 100%);
+$rose-white: hsl(330, 100%, 98%);
+$eggshell: hsl(30, 54%, 90%);
+$light-grey: hsl(30, 18%, 87%);
+$wenge-brown: hsl(20, 1%, 43%);
+$dark-charcoal: hsl(24, 5%, 18%);
+
+//? font-family
+$font-outfit: 'Outfit', sans-serif;
+$font-youngSerif: 'Young Serif', sans-serif;
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(#{$outfit-font-path}/Outfit-VariableFont_wght.ttf) format(truetype);
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 600 700;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url(#{$youngSerif-font-path}/YoungSerif-Regular.ttf) format(truetype);
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root{
+  --nutmeg: #{$nutmeg};
+  --dark-raspberry: #{$dark-raspberry};
+  --white: #{$white};
+  --rose-white: #{$rose-white};
+  --eggshell: #{$eggshell};
+  --light-grey: #{$light-grey};
+  --wenge-brown: #{$wenge-brown};
+  --dark-charcoal: #{$dark-charcoal};
+}

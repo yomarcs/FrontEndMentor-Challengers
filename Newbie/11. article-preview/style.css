@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+body{
+    background-color: var(--lightGrayishBlue);
+}
+
+main{
+    background-color: white;
+    /* max-width: 52%;
+    min-height: 34vh; */
+    max-width: 360px;
+    min-height: 560px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.image{
+    margin-bottom: 40px;
+}
+
+.image figure{
+    height: 220px;
+    background: url(./images/drawers.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.description h2{
+    font-size: 1.4rem;
+    padding: 0px 35px;
+    color: var(--veryDarkGrayishBlue);
+    margin-bottom: 20px;
+}
+
+.description p{
+    padding: 0px 36px;
+    margin-bottom: 20px;
+    color: var(--desaturatedDarkBlue);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    letter-spacing: 0.01rem;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0px 35px;
+}
+
+.avatar h1, .avatar p{
+    margin-left: 20px;
+}
+
+.avatar figure img{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.avatar div{
+    line-height: 22px;
+}
+
+.avatar div h1{
+    font-size: 1.1rem;
+}
+
+.avatar div p{
+    font-size: 1.1rem;
+    color: var(--grayishBlue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    font-weight: 700;
+    color:#333;
+}
