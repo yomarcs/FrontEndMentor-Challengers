@@ -100,7 +100,7 @@ p{
 
 .attribution {
     font-size: 11px;
-    color:hsl(233, 47%, 7%);
+    color: var(--softViolet);
     text-align: center;
     padding: 10px;
     margin: 5px;
@@ -114,7 +114,7 @@ p{
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
 .contain{
     height: 100vh;
     width: 100vw;
@@ -174,15 +174,10 @@ p{
     font-size: 15px;
     font-weight: bold;
 }
-
-.attribution {
-    color: #ddd;
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
 }
+
+@media screen and (max-height: 700px){
+    .attribution{
+        display: none;
+    }
 }
