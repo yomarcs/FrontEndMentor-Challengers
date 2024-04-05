@@ -22,7 +22,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [[Solution URL](https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/index.html)](https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/index.html)
+- Solution URL: [https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/index.html](https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/index.html)
 - Live Site URL: [https://yomarcs.github.io/order-summary-component/](https://yomarcs.github.io/order-summary-component/)
 
 ### Built with
