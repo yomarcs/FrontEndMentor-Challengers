@@ -1,0 +1,77 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+@font-face {
+  font-family: "Red Hat Display", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500 700 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: hsl(225, 100%, 94%) url("../images/pattern-background-mobile.svg") no-repeat top/contain;
+}
+
+.card {
+  border: 1px solid red;
+  width: 90%;
+  height: 80%;
+  max-width: 340px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+.card h2 {
+  width: 100%;
+  margin: 1em auto;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.card-description {
+  border: 1px solid red;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--desaturated-blue);
+}/*# sourceMappingURL=styles.css.map */

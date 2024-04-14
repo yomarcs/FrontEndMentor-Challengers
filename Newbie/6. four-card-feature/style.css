@@ -133,13 +133,14 @@ footer{
 .attribution {
     font-size: 14px;
     text-align: center;
+    color: var(--Red);
 }
 
 .attribution a{
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1250px){
 .contain{
     width: 600px;
     height: 1350px;
@@ -168,10 +169,9 @@ main{
     left: 0;
     margin: 35px auto;
 }
-
 footer{
     display: none;
-}
+    }
 }
 
 @media screen and (max-height: 920px){
@@ -180,10 +180,12 @@ footer{
     transform: none;
     margin: 20px auto;
 }
-
-footer{
-display: none;
 }
+
+@media screen and (max-height: 830px){
+    footer{
+        display: none;
+        }
 }
 
 @media screen and (max-width: 600px){
@@ -221,5 +223,8 @@ main{
 .card div img{
     width: 50px;
 }
+footer{
+    display: none;
+    }
 }
 

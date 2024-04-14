@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: $font_red-hat-display;
+  font-size: 1rem;
+  background-color: $pale-blue;
+}
+
+.container{
+  display: grid;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: $pale-blue url($image_path-hero) no-repeat top/contain;
+}
+
+.card{
+  border: 1px solid red;
+  width: 90%;
+  height: 80%;
+  max-width: 340px;
+  background-color: $very-pale-blue;
+  border-radius: 20px;
+  overflow: hidden;
+    img{
+      width: 100%;
+    }
+    h2{
+      width: 100%;
+      margin: 1em auto;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    &-description{
+      border: 1px solid red;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      color: $desaturated-blue;
+      line-height: 1.5;
+    }
+} 
+
+.attribution{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--desaturated-blue);
+}

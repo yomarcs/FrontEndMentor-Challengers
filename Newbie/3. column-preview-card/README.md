@@ -3,9 +3,9 @@
 Live Site URL: [https://yomarcs.github.io/column-preview-card/](https://yomarcs.github.io/column-preview-card/)
 
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the 3-column preview card coding challenge](./design/desktop-preview.jpg)
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-![Stats preview card solution](./design/screenshot-solution.png)
+![3-column preview card solution](./design/screenshot-solution.png)
 
 ### Links
 

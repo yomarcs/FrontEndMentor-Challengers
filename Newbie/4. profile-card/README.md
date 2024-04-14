@@ -3,9 +3,9 @@
 Live Site URL: [https://yomarcs.github.io/profile-card/](https://yomarcs.github.io/profile-card/)
 
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Profile card coding challenge](./design/desktop-preview.jpg)
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](ttps://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJh). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](ttps://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJh). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
-![Stats preview card solution](./design/screenshot-solution.png)
+![Profile card solution](./design/screenshot-solution.png)
 
 ### Links
 
