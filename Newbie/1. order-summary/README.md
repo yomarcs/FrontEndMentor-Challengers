@@ -22,18 +22,20 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/index.html](https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/index.html)
+- Solution URL: [https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/v2](https://github.com/yomarcs/FrontEndMentor-Challengers/blob/main/Newbie/1.%20order-summary/v2)
 - Live Site URL: [https://yomarcs.github.io/order-summary-component/](https://yomarcs.github.io/order-summary-component/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Grid
+- Sass
 
 ## Author
 
 - Frontend Mentor - [@yomarcs](https://www.frontendmentor.io/profile/yomarcs)
 - Github - [@yomarcs](https://github.com/yomarcs)
+
 
 
