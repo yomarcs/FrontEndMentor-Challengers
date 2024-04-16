@@ -1,30 +1,33 @@
 //? font path
-$font_path_red-hat-display: 'https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap';
+$path_font_red-hat-display: 'https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap';
 
 //? image path
-$image_path-hero: '../images/pattern-background-mobile.svg';
+$path_image-hero-mobile: '../images/pattern-background-mobile.svg';
+$path_image-hero-desktop: '../images/pattern-background-desktop.svg';
 
 //? font family
 $font_red-hat-display: 'Red Hat Display', sans-serif;
 
 //? colors
-$pale-blue: hsl(225, 100%, 94%);
-$bright-blue: hsl(245, 75%, 52%);
-$very-pale-blue: hsl(225, 100%, 98%);
-$desaturated-blue: hsl(224, 23%, 55%);
-$dark-blue: hsl(223, 47%, 23%);
+$color_pale-blue: hsl(225, 100%, 94%);
+$color_bright-blue: hsl(245, 75%, 52%);
+$color_very-pale-blue: hsl(225, 100%, 98%);
+$color_desaturated-blue: hsl(224, 23%, 55%);
+$color_dark-blue: hsl(223, 47%, 23%);
+$color_box-shadow: hsl(210, 4%, 71%);
+$background_card-plan: hsl(228, 56%, 98%);
 
 :root{
-  --pale-blue: #{$pale-blue};
-  --bright-blue: #{$bright-blue};
-  --very-pale-blue: #{$very-pale-blue};
-  --desaturated-blue: #{$desaturated-blue};
-  --dark-blue: #{$dark-blue};
+  --pale-blue: #{$color_pale-blue};
+  --bright-blue: #{$color_bright-blue};
+  --very-pale-blue: #{$color_very-pale-blue};
+  --desaturated-blue: #{$color_desaturated-blue};
+  --dark-blue: #{$color_dark-blue};
 }
 
 @font-face {
   font-family: $font_red-hat-display;
-  src: url($font_path_red-hat-display);
+  src: url($path_font_red-hat-display);
   font-display: swap;
   font-style: normal;
   font-weight: 500 700 900;

@@ -76,7 +76,7 @@ h3{
 
 .card-plan{
     position: relative;
-    background-color: #e8f1f8;
+    background-color: hsl(206, 53%, 94%);
     max-width: 70%;
     margin: auto;
     padding: 25px 15px;
