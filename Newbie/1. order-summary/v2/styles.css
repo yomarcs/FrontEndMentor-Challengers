@@ -51,7 +51,7 @@ body {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 15px 20px hsl(210, 4%, 71%);
-  margin-block: 40px;
+  margin-block: 20px;
   margin-inline: 10px;
 }
 .container .card img {
