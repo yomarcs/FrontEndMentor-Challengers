@@ -29,7 +29,9 @@ This is a solution to the [Stats preview card  challenge on Frontend Mentor](htt
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Sass
 - Flexbox
+- Mobile-first workflow
 
 ## Author
 

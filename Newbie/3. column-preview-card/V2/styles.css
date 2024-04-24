@@ -1,0 +1,44 @@
+:root {
+  --color_bright-orange: hsl(31, 77%, 52%);
+  --color_dark-cyan: hsl(184, 100%, 22%);
+  --color_very-dark-cyan: hsl(179, 100%, 13%);
+  --color_transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color_very-light-gray: hsl(0, 0%, 95%);
+}
+
+@font-face {
+  font-family: "Lexend Deca", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Big Shoulders Display", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 1rem;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}/*# sourceMappingURL=styles.css.map */

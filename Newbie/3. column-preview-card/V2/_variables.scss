@@ -1,0 +1,41 @@
+//? font path
+$font_path_lexend-deca: 'https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap';
+$font_path_big-shoulders-display: 'https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap';
+
+//? font
+$font_lexend-deca: 'Lexend Deca', sans-serif;
+$font_big-shoulders-display: 'Big Shoulders Display', sans-serif;;
+
+//? color
+$color_bright-orange: hsl(31, 77%, 52%);
+$color_dark-cyan: hsl(184, 100%, 22%);
+$color_very-dark-cyan: hsl(179, 100%, 13%);
+$color_transparent-white: hsla(0, 0%, 100%, 0.75);
+$color_very-light-gray: hsl(0, 0%, 95%);
+
+:root{
+  --color_bright-orange: #{$color_bright-orange};
+  --color_dark-cyan: #{$color_dark-cyan};
+  --color_very-dark-cyan: #{$color_very-dark-cyan};
+  --color_transparent-white: #{$color_transparent-white};
+  --color_very-light-gray: #{$color_very-light-gray};
+}
+
+@font-face {
+  font-family: $font_lexend-deca;
+  src: url($font_path_lexend-deca);
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font_big-shoulders-display;
+  src: url($font_path_big-shoulders-display);
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
