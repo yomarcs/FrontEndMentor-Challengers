@@ -9,15 +9,131 @@
 
 html{
   font-size: 15px;
-  background-color: $color_very-light-gray;
 }
 
 body{
+  background-color: $color_very-light-gray;
+  font-family: $font_lexend-deca;
   font-size: 1rem;
+  text-rendering: optimizeSpeed;
 }
 
 .container{
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 86%;
+  min-width: 300px;
+  max-width: 320px;
+  height: 1320px;
+  margin: auto;
+  margin-block: 40px;
   background-color: $color_very-light-gray;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  .card{
+    height: 440px;
+    padding: 45px;
+    color: $color_transparent-white;
+    font-weight: 400;
+    h1{
+      margin-block: 30px;
+      color: $color_very-light-gray;
+      font-family: $font_big-shoulders-display;
+      font-size: 2.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p{
+      line-height: 1.6;
+    }
+    button{
+      margin-block: 30px;
+      padding: 1rem 2.2rem;
+      border-radius: 25px;
+      border: none;
+      background-color: $color_very-light-gray;
+      font-size: 1rem;
+      font-weight: bolder;
+      cursor: pointer;
+      &:active{
+        background-color: transparent;
+        color: $color_transparent-white;
+        border: 2px solid $color_very-light-gray;
+
+      }
+    }
+  }
+}
+
+.orange {
+  background-color: $color_bright-orange;
+  button{
+    color: $color_bright-orange;
+  }
+}
+
+.dark-cyan {
+  background-color: $color_dark-cyan;
+  button{
+    color: $color_dark-cyan;
+  }
+}
+
+.very-dark-cyan {
+  background-color: $color_very-dark-cyan;
+  button{
+    color: $color_very-dark-cyan;
+  }
+}
+
+.attribution{
+  color: $color_very-dark-cyan;
+  width: 90%;
+  margin: 15px auto;
+  text-align: center;
+  a:link{
+    color: $color_bright-orange;
+  }
+  a:visited{
+    color: $color_dark-cyan;
+  }
+}
+
+@include desktop{
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: initial;
+    margin-block: initial;
+    .card{
+      display: inline-block;
+      width: 320px;
+    }
+    .orange{
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
+    .very-dark-cyan{
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+  .attribution{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@include attribution{
+  .container{
+    margin-block: 20px;
+  }
+  .attribution{
+    visibility: hidden;
+  }
 }

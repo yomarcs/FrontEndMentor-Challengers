@@ -1,0 +1,11 @@
+@mixin desktop{
+  @media screen and (min-width: 1000px){
+    @content;
+  }
+}
+
+@mixin attribution{
+  @media screen and (max-height: 560px){
+    @content;
+  }
+}
