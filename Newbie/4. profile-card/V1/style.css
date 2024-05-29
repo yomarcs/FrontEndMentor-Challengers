@@ -10,41 +10,79 @@
     --darkCyan: hsl(185, 75%, 39%);
     --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
     --darkGrayisBlue: hsl(227, 10%, 46%);
-
     --darkGray: hsl(0, 0%, 59%);
+}
+
+html{
+    font-size: 18px;
+    overflow: hidden;
 }
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     background-color: var(--darkCyan);
 }
 
-.contain{
-    max-width: 100%;
-    max-height: 100%;
+.contain{ 
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
 .card{
     position: absolute;
-    width: 400px;
+    top: 50%;
+    left: 50%;
+    z-index: 99; 
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 350px;
+    min-width: 300px;
     height: 420px;
     background-color: #fff;
     border-radius: 10px;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    transform: translate(-50%,-50%);
     box-shadow: 10px 10px 20px hsl(184, 44%, 43%), -10px -10px 20px hsl(184, 44%, 43%);
 }
+
+.card::after {
+    content: "";
+    background-image: url( "../images/bg-pattern-top.svg" );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350%;
+    height: 350%;
+    transform: translate( -75%, -70%);
+    z-index: -99;
+  }
+  
+  .card::before {
+    content: "";
+    background-image: url( "../images/bg-pattern-bottom.svg" );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350%;
+    height: 350%;
+    transform: translate( 75%, 85% );
+    z-index: -99;
+  }
 
 .bg-pattern-card{
     position: relative;
     height: 150px;
-    background-image: url(/images/bg-pattern-card.svg);
+    background-image: url("../images/bg-pattern-card.svg");
     background-position: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .avatar{
@@ -52,11 +90,11 @@ body{
     left: 50%;
     bottom: 0px;
     transform: translate(-50%,50%);
-    background-image: url("./images/image-victor.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 120px;
     height: 120px;
+    background-image: url("../images/image-victor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 50%;
     border: 5px solid white;
     overflow: hidden;
@@ -65,7 +103,6 @@ body{
 .business-card{
     height: 170px;
 }
-
 
 .business-card h2{
     padding-top: 85px;
@@ -115,29 +152,10 @@ hr{
     margin-top: 5px;
 }
 
-.bg-pattern-top{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-25%, -50%);
-}
-
-.bg-bottom{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 700px;
-    height: 500px;
-    overflow: hidden;
-}
-
-.bg-pattern-bottom{
-    width: 1000px;
-}
-
 .attribution {
     position: fixed;
-    font-size: 15px;
+    width: 90%;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -148,4 +166,5 @@ hr{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    cursor: pointer;
 }

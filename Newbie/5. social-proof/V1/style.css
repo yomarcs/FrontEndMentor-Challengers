@@ -157,8 +157,8 @@ h3{
 @media screen and (max-width: 700px){
 
 body{
-    background: url(./images/bg-pattern-top-mobile.svg),
-                url(./images/bg-pattern-bottom-mobile.svg);
+    background: url(../images/bg-pattern-top-mobile.svg),
+                url(../images/bg-pattern-bottom-mobile.svg);
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat, no-repeat;

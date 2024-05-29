@@ -1,0 +1,28 @@
+//? font path
+$font_path_Kumbh-Sans: './assets/fonts';
+
+//? font
+$font_Kumbh-Sans: "Kumbh Sans";
+
+//? color
+$color_dark-cyan: hsl(185, 75%, 39%);
+$color_Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$color_dark-grayish-blue: hsl(227, 10%, 46%);
+$color_dark-gray: hsl(0, 0%, 59%);
+
+:root{
+  --color_dark-cyan: #{$color_dark-cyan};
+  --color_Very-dark-desaturated-blue: #{color_Very-dark-desaturated-blue};
+  --color_dark-grayish-blue: #{$color_dark-grayish-blue};
+  --color_dark-gray: #{$color_dark-gray};
+}
+
+@font-face {
+  font-family: $font_Kumbh-Sans;
+  src: url('#{$font_path_Kumbh-Sans}/KumbhSans.ttf') format('truetype');
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
