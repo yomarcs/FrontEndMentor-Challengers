@@ -1,0 +1,272 @@
+:root {
+  --color_very-dark-magenta: hsl(300, 43%, 22%);
+  --color_soft-pink: color_soft-pink;
+  --color_dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color_light-grayish-magenta: hsl(300, 24%, 96%);
+  --color_white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("./assets/fonts/League_Spartan/LeagueSpartan.ttf") format("truetype");
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 400, 500, 700;
+  font-style: normal;
+}
+html {
+  font-size: 15px;
+  font-family: "League Spartan";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    max-height: initial;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .contain {
+  width: 90vw;
+  min-width: 300px;
+  margin: 82px auto 5px;
+  max-width: 1100px;
+}
+body .contain .section1 {
+  min-width: 300px;
+}
+@media screen and (min-width: 720px) {
+  body .contain .section1 {
+    width: 50%;
+    height: 265px;
+    float: left;
+  }
+}
+body .contain .section1 h1 {
+  padding-inline: 25px;
+  font-size: calc(2.3rem + 1.9vw);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: calc(2rem + 1.3vw);
+  color: hsl(300, 43%, 22%);
+}
+@media screen and (min-width: 425px) {
+  body .contain .section1 h1 {
+    padding-inline: 65px;
+  }
+}
+@media screen and (min-width: 720px) {
+  body .contain .section1 h1 {
+    padding-inline: initial;
+    text-align: start;
+    padding-right: 15%;
+  }
+}
+body .contain .section1 p {
+  margin-top: 1.3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.7rem;
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+  letter-spacing: -1px;
+}
+@media screen and (min-width: 425px) {
+  body .contain .section1 p {
+    padding-inline: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  body .contain .section1 p {
+    text-align: start;
+    padding-inline: initial;
+    padding-right: 7%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .contain .section1 p {
+    padding-right: 20%;
+  }
+}
+body .contain .section2 {
+  padding: 40px 0px 32px;
+  min-height: 320px;
+}
+@media screen and (min-width: 720px) {
+  body .contain .section2 {
+    width: 50%;
+    min-height: 265px;
+    float: right;
+    padding-block: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .contain .section2 .starts:nth-child(2) {
+    margin: auto;
+  }
+  body .contain .section2 .starts:nth-child(3) {
+    float: right;
+  }
+}
+body .contain .section2 .starts {
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
+  margin-bottom: 17px;
+  padding: 15px 30px;
+  background-color: hsl(300, 24%, 96%);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+}
+@media screen and (min-width: 720px) {
+  body .contain .section2 .starts {
+    margin-bottom: initial;
+    margin-top: 15px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .contain .section2 .starts {
+    margin: 17px 0px;
+    padding: 19px 30px;
+    text-align: start;
+  }
+}
+body .contain .section2 .starts img {
+  width: 16px;
+  margin-left: 6px;
+}
+body .contain .section2 .starts span {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: hsl(300, 43%, 22%);
+}
+@media screen and (min-width: 720px) {
+  body .contain .section2 .starts span {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .contain .section2 .starts span {
+    display: initial;
+    margin-left: 25px;
+  }
+}
+body .contain .section3 {
+  min-height: 320px;
+}
+@media screen and (min-width: 720px) {
+  body .contain .section3 {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .contain .section3 {
+    justify-content: space-between;
+    gap: initial;
+    padding-top: 30px;
+  }
+  body .contain .section3 .center {
+    align-self: center;
+  }
+  body .contain .section3 .end {
+    align-self: end;
+  }
+}
+body .contain .section3 .posts {
+  height: 245px;
+  margin-bottom: 17px;
+  padding: 40px 33px 30px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  color: hsl(300, 24%, 96%);
+  transition: height ease 0.5s;
+}
+@media screen and (min-width: 425px) {
+  body .contain .section3 .posts {
+    height: 215px;
+  }
+}
+@media screen and (min-width: 720px) {
+  body .contain .section3 .posts {
+    margin-bottom: initial;
+    max-width: 45%;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .contain .section3 .posts {
+    display: inline-block;
+    height: 235px;
+    width: 32%;
+    max-width: 346px;
+  }
+}
+body .contain .section3 .posts .client {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+body .contain .section3 .posts .client .photo {
+  width: 40px;
+  border-radius: 50%;
+}
+body .contain .section3 .posts .client .person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .contain .section3 .posts .client .person .name {
+  font-size: 1.15rem;
+}
+body .contain .section3 .posts .client .person .verified {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsl(333, 80%, 67%);
+}
+body .contain .section3 .posts .description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.455rem;
+}
+body .contain .attribution {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5rem;
+  color: hsl(300, 43%, 22%);
+}
+body .contain .attribution a:link, body .contain .attribution a:visited, body .contain .attribution a:hover, body .contain .attribution a:active {
+  color: hsl(333, 80%, 67%);
+}
+@media screen and (min-width: 720px) {
+  body .contain .attribution {
+    padding-top: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */
