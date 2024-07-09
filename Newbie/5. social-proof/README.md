@@ -2,7 +2,7 @@
 
 Live Site URL: [https://yomarcs.github.io/social-proof-section-master/](https://yomarcs.github.io/social-proof-section-master/)
 
-![Design preview for the 3-column preview card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -21,7 +21,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [https://github.com/yomarcs/column-preview-card/blob/main/index.html](https://github.com/yomarcs/social-proof-section-master/blob/main/V2)
+- Solution URL: [https://github.com/yomarcs/social-proof-section-master/blob/V2/main/index.html](https://github.com/yomarcs/social-proof-section-master/blob/main/V2)
 - Live Site URL: [https://yomarcs.github.io/column-preview-card/](https://yomarcs.github.io/social-proof-section-master/)
 
 ### Built with

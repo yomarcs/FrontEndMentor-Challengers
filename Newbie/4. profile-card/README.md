@@ -22,7 +22,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [https://github.com/yomarcs/profile-card/blob/main/index.html](https://github.com/yomarcs/profile-card/blob/main/index.html)
+- Solution URL: [https://github.com/yomarcs/profile-card/blob/main/index.html](https://github.com/yomarcs/profile-card/blob/main/V2)
 - Live Site URL: [https://yomarcs.github.io/profile-card/](https://yomarcs.github.io/profile-card/)
 
 ### Built with

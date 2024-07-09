@@ -11,7 +11,7 @@ body{
   width: 100vw;
   max-height: 100vh;
   overflow-x: hidden;
-  @include desktop{
+  @include desktopMinHeight{
     max-height: initial;
     height: 100vh;
     display: flex;
